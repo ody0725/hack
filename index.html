@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2027학년도 수시모집 합격자 발표</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="page-header">
+      <h1>2027학년도 수시모집 합격자 발표</h1>
+      <a class="official-logo-link" href="https://daegu.ac.kr/page/36" target="_blank" rel="noreferrer" aria-label="대구대학교 공식 UI 안내">
+        <span class="logo-crop" aria-hidden="true">
+          <img src="https://daegu.ac.kr/resources/images/site/contents/intro_symbol_logo_img2.jpg" alt="" class="official-logo-image">
+        </span>
+        <span class="logo-fallback">대구대학교<br><small>DAEGU UNIVERSITY</small></span>
+      </a>
+    </header>
+    <div class="header-rule"></div>
+
+    <form id="admission-form" novalidate>
+      <table class="admission-table input-table" aria-label="합격자 발표 정보 입력">
+        <tbody>
+          <tr>
+            <th scope="row">모집구분</th>
+            <td><span class="static-value">수시</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="track">전형</label></th>
+            <td>
+              <select id="track" name="track" required>
+                <option value="" selected disabled>전형을 선택하세요</option>
+                <option>학생부교과전형</option>
+                <option>학생부종합전형</option>
+                <option>지역인재전형</option>
+                <option>기회균형전형</option>
+                <option>실기/실적전형</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="department">학과/학부</label></th>
+            <td>
+              <select id="department" name="department" required>
+                <option value="" selected disabled>학과/학부를 선택하세요</option>
+                  <option>컴퓨터정보공학부 컴퓨터공학전공</option>
+                  <option>컴퓨터정보공학부 컴퓨터소프트웨어전공</option>
+                  <option>컴퓨터정보공학부 사이버보안전공</option>
+                  <option>전자전기공학부 반도체전자공학전공</option>
+                  <option>전자전기공학부 전기공학전공</option>
+                  <option>기계자동차공학부 기계공학전공</option>
+                  <option>기계자동차공학부 미래자동차전공</option>
+                  <option>건축공학과</option>
+                  <option>소방안전방재학과</option>
+                  <option>친환경에너지학과</option>
+                  <option>식품영양학과</option>
+                  <option>조경산림정원학과</option>
+                  <option>경영학부 경영학전공</option>
+                  <option>경영학부 회계학전공</option>
+                  <option>경제금융통상학과</option>
+                  <option>호텔관광경영학부 관광항공경영전공</option>
+                  <option>호텔관광외식서비스전공</option>
+                  <option>일본어일본학과</option>
+                  <option>사회복지학과</option>
+                  <option>청소년상담복지학과</option>
+                  <option>문헌정보학과</option>
+                  <option>심리학과</option>
+                  <option>영상콘텐츠전공</option>
+                  <option>광고PR전공</option>
+                  <option>간호학과</option>
+                  <option>물리치료학과</option>
+                  <option>작업치료학과</option>
+                  <option>언어치료학과</option>
+                  <option>응급구조학과</option>
+                  <option>보건의료학과</option>
+                  <option>국어교육과</option>
+                  <option>영어교육과</option>
+                  <option>역사교육과</option>
+                  <option>유아교육과</option>
+                  <option>특수교육학부 특수교육전공</option>
+                  <option>자유전공학부</option>
+                  <option>웹툰영상애니메이션학부 웹툰전공</option>
+                  <option>패션디자인학과</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="application-number">수험번호</label></th>
+            <td><input id="application-number" name="applicationNumber" type="text" autocomplete="off" required></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="birth-date">생년월일</label></th>
+            <td><input id="birth-date" name="birthDate" type="date" required></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="applicant-name">지원자명</label></th>
+            <td><input id="applicant-name" name="applicantName" type="text" autocomplete="name" required></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="contact">연락처</label></th>
+            <td><input id="contact" name="contact" type="tel" inputmode="tel" autocomplete="tel" required></td>
+          </tr>
+        </tbody>
+      </table>
+      <p id="form-error" class="form-error" role="alert" hidden>필수 항목을 모두 입력해 주세요.</p>
+      <div class="actions"><button type="submit">결과 보기</button></div>
+    </form>
+  <div class="prototype-note" role="note">실제 합격 결과가 아닙니다</div>
+</body>
+</html>
